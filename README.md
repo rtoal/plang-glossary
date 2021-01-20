@@ -1,10 +1,13 @@
-# The Programming Languages Glossary
+# The Programming Languages and Compilers Glossary
 
 ### Abstract Class
 A class that cannot have any instances.
 
 ### Abstract Method
 A method of an abstract class that has no implementation.
+
+### Abstract Syntax
+The representation of a program’s structure without tiny details like certain punctuation and preposition-like keywords
 
 ### Activation Record
 See frame.
@@ -20,6 +23,9 @@ One of the names of a multiply-named entity. An entity to which multiple names a
 
 ### Annotation
 A form of metadata attached to an entity.
+
+### AOT
+(1) Method of language translation in which the source language is translated fully _before_ interpretation, that is, Ahead-Of-Time, (2) English abbreviation for the Manga 進撃の巨人.
 
 ### Argument
 An expression passed to a (parameterized) entity during a call, instantiation, or other invocation.
@@ -213,6 +219,9 @@ The process of evaluating a string or object literal to yield a result in which 
 ### Iterator
 An object that provides the capability to access the elements of a container in some order.
 
+### JIT
+Method of language translation in which the source language is translated _during_ interpretation, that is, Just-In-Time.
+
 ### Keyword
 A word with a special meaning in a programming language, such as "function", "while", or "if", that generally cannot be used as an identifier.
 
@@ -341,6 +350,12 @@ The region of source code in which a binding refers to a given entity.
 
 ### Second-class
 An entity that is not allowed to be represented by a variable in an expression.
+
+### Semantic Analysis
+The phase of language translation or interpretation in which (1) legality rules that cannot be captured in a context-free syntax are checked, and (2) all identifier uses are resolved to determine the definitions that they reference.
+
+### Semantics
+Meaning
 
 ### Semaphore
 A variable or object used to permit only a specific number of threads to access a shared resource at a time.
