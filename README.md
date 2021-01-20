@@ -52,7 +52,7 @@ The use of a resource without taking full ownership.
 A function f both passed to a function g and invoked within g.
 
 ### Character
-1. A named, abstract symbol. 2. The type of characters.
+(1) A named, abstract symbol. (2) The type of characters.
 
 ### Class
 An entity from which objects are created. Objects instantiated from a class have the structure and behavior defined by the class, though in some languages instances are allowed to be customized.
@@ -136,7 +136,7 @@ The evaluation of all of a function’s arguments (or an operator’s operand) b
 The bundling of data elements into a single component, often in a way that the constituent elements cannot be directly accessed.
 
 ### Encoding
-1. The representation, in bytes, of an entity. 2. A specification of how certain entities should be encoded in bytes.
+(1) The representation, in bytes, of an entity. (2) A specification of how certain entities should be encoded in bytes.
 
 ### Enumeration
 A complete ordering of a given set of elements. The term may refer either to (1) a type whose constituent values are listed (an enumerated type) or (2) a sequence of values emitted by a generator.
@@ -262,7 +262,7 @@ Roughly, a structure providing a mechanism for chaining computations over differ
 An object or module providing mutually exclusive access among its clients to achieve thread safety.
 
 ### Object
-1. An entity in a program intended to be stored in memory. 2. (OOP) An instance of class.
+(1) An entity in a program intended to be stored in memory. (2) (OOP) An instance of class.
 
 ### Operator
 A function, generally, though not necessarily, named with non-alphanumeric symbols that computes well-known (often algebraic) and widely applicable operations.
@@ -304,7 +304,7 @@ The allowance for a single name to be bound to multiple entities at the same tim
 Roughly, a placeholder for an (initially) unfinished computation. A promise is immediately returned when an asynchronous computation is launched to be queried later or used in a callback. Also known as a future, though in some contexts, futures and promises are distinguished.
 
 ### Prototype
-1. An object from which other objects are derived. 2. An object to which property requests are forwarded to by an object that does not own a property of a given name. 3. In C, a function signature.
+(1) An object from which other objects are derived. (2) An object to which property requests are forwarded to by an object that does not own a property of a given name. (3) In C, a function signature.
 
 ### Proxy
 An object that provides an interface to another object. The proxy takes requests on behalf of the proxied object and may modify or deny these requests before forwarding them to the proxied object.
@@ -337,7 +337,7 @@ A value that can be assigned. So named because traditional assignment statements
 The region of source code in which a binding refers to a given entity.
 
 ### Scripting Language
-1. A language designed for running jobs, i.e., coordinating (or scripting) the activities of other programs. 2. A language low on “ceremony” but rich in expressive features, designed to allow its programmers to be productive.
+(1) A language designed for running jobs, i.e., coordinating (or scripting) the activities of other programs. (2) A language low on “ceremony” but rich in expressive features, designed to allow its programmers to be productive.
 
 ### Second-class
 An entity that is not allowed to be represented by a variable in an expression.
@@ -445,7 +445,7 @@ A type whose set of values is the union of zero or more other types.
 A unit of data.
 
 ### Variable
-1. An identifier bound to a value. 2. A storage location containing a value that can change.
+(1) An identifier bound to a value. (2) A storage location containing a value that can change.
 
 ### Volatile Variable
 A variable that must be made available to multiple threads and thus cannot be implemented with multiple divergent copies per-thread.
