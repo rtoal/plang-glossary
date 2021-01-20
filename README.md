@@ -1,16 +1,16 @@
 # The Programming Languages and Compilers Glossary
 
 ### Abstract Class
-A class that cannot have any instances.
+A class that cannot have any instances (as it is intended to be subclassed).
 
 ### Abstract Method
-A method of an abstract class that has no implementation.
+A method of an abstract class or interface that has no implementation.
 
 ### Abstract Syntax
-The representation of a program’s structure without tiny details like certain punctuation and preposition-like keywords
+A representation of a program’s structure without details such as certain punctuation and preposition-like keywords that serve only to impose a structure on linear program text.
 
 ### Activation Record
-See frame.
+See **frame**.
 
 ### Actor
 A concurrent process that communicates by sending and receiving messages.
@@ -19,19 +19,19 @@ A concurrent process that communicates by sending and receiving messages.
 An entity that acts on behalf of another entity.
 
 ### Alias
-One of the names of a multiply-named entity. An entity to which multiple names are bound is said to be aliased.
+One of the names of a multiply-named entity. (An entity to which multiple names are bound is said to be aliased.)
 
 ### Annotation
 A form of metadata attached to an entity.
 
 ### AOT
-(1) Method of language translation in which the source language is translated fully _before_ interpretation, that is, Ahead-Of-Time, (2) English abbreviation for the Manga 進撃の巨人.
+(1) Method of language translation in which the source language is translated fully _before_ interpretation, that is, Ahead-Of-Time. (2) English abbreviation for the Manga 進撃の巨人.
 
 ### Argument
 An expression passed to a (parameterized) entity during a call, instantiation, or other invocation.
 
 ### Assignable
-A mutable storage location. Used in place of the term variable when emphasizing mutability.
+A mutable storage location. Used in place of the term **variable** when emphasizing mutability.
 
 ### Assignment
 The act of associating a value with a (mutable) variable.
@@ -40,13 +40,16 @@ The act of associating a value with a (mutable) variable.
 A type of invocation in which the caller does not wait for the callee to complete.
 
 ### Atom
-A named primitive entity whose value is, essentially, itself. Also known as a symbol.
+A named primitive entity whose value is, essentially, itself. Also known as a **symbol**.
 
-### Atomic
-Object An object that can be operated upon safely in a multithreaded environment without locks. Often the object holds a numeric value on which “compound” operations such as compare-and-set or get-and-add can be done atomically.
+### Atomic Object
+An object that can be operated upon safely in a multithreaded environment without locks. Often the object holds a numeric value on which “compound” operations such as compare-and-set or get-and-add can be done atomically.
 
 ### Automatic Reference Counting (ARC)
 A mechanism in which the compiler inserts code to release and retain blocks of memory so the programmer does not have to.
+
+### Billion-Dollar Mistake
+The implicit extension of types to include a null value. (For example, Java is said to suffer from the billion-dollar mistake since `null` is essentially a member of the `String` type; whereas Swift does not since the types `String` and `String?` are distinct, with the latter _explicitly_ allowing the null value.)
 
 ### Binding
 An association of a name with an entity.
@@ -55,7 +58,7 @@ An association of a name with an entity.
 The use of a resource without taking full ownership.
 
 ### Callback
-A function f both passed to a function g and invoked within g.
+A function _f_ both passed to a function _g_ and invoked within the body of _g_.
 
 ### Character
 (1) A named, abstract symbol. (2) The type of characters.
@@ -64,7 +67,7 @@ A function f both passed to a function g and invoked within g.
 An entity from which objects are created. Objects instantiated from a class have the structure and behavior defined by the class, though in some languages instances are allowed to be customized.
 
 ### Class Variable
-A property that belongs to a class, rather than to the instances of the class.
+A property that belongs to a class, rather than to the instances of the class. Sometimes known as a **static field** or **static property**.
 
 ### Closure
 A block or function with free variables that takes values from the environment in which it is defined.
@@ -87,11 +90,14 @@ The modeling and coordination of independent and distinct computing activities w
 ### Continuation
 Roughly, a representation of “the rest of the program.”
 
+### Contravariance
+A property of a type system that defines T<U> to be a subtype of T<V> whenever U is a **supertype** of V.
+  
 ### Coroutine
-A line of execution that, under explicit programmer control, can yield to other coroutines and be resumed. Coroutines share a processing unit in the sense that only one coroutine is executing at a time.
+A line of execution that, under explicit programmer control, can yield to other coroutines and be resumed.
 
 ### Covariance
-The existence of a subtype relationship between T<U> and T<V>, where T is a parameterized type and U is a subtype of V.
+A property of a type system that defines T<U> to be a subtype of T<V> whenever U is a **subtype** of V.
 
 ### Curried Function
 A function of one parameter that returns a function of one parameter, in contrast to a function that takes two parameters (or a pair of objects).
@@ -124,19 +130,19 @@ The evaluation of the the object referenced by a (pointer) variable.
 Code (generally a function) executed when an object is destroyed.
 
 ### Dictionary
-A set of key-value pairs, with unique keys. Also known as a map.
+A set of key-value pairs, with unique keys. Also known as a **map**.
 
 ### Discriminated Union
-See tagged union.
+See **tagged union**.
 
 ### Dynamic Language
 A language in which tasks such as modifying code and adding types can be done at run time.
 
 ### Dynamic Typing
-The state of having types of some expressions not known until run time.
+The state of having the types of some expressions not known until run time.
 
 ### Eager Evaluation
-The evaluation of all of a function’s arguments (or an operator’s operand) before application of the function (or operator). Also known as strict evaluation.
+The evaluation of all of a function’s arguments (or an operator’s operand) _before_ application of the function (or operator). Also known as **strict evaluation**.
 
 ### Encapsulation
 The bundling of data elements into a single component, often in a way that the constituent elements cannot be directly accessed.
@@ -144,14 +150,20 @@ The bundling of data elements into a single component, often in a way that the c
 ### Encoding
 (1) The representation, in bytes, of an entity. (2) A specification of how certain entities should be encoded in bytes.
 
+### Enum
+See **enumerated type**.
+
 ### Enumeration
-A complete ordering of a given set of elements. The term may refer either to (1) a type whose constituent values are listed (an enumerated type) or (2) a sequence of values emitted by a generator.
+A complete ordering of a given set of elements. The term may refer either to (1) a type whose constituent values are listed (an **enumerated type**) or (2) a sequence of values emitted by a generator.
+
+### Enumerated Type
+A type whose complete set of memebers is listed (enumerated) in the program.
 
 ### Event
 An occurrence that can be detected and handled.
 
 ### Exception
-An entity that is thrown, or raised to abort the current normal control flow and transfer control to the point at which the exception is caught.
+An entity that is thrown, or raised, to abort the current normal control flow and transfer control to the point at which the exception is caught. (In many languages exceptions are just called **errors**. Some languages even try to distinguish errors and exceptions.)
 
 ### Falsy
 Treated as false in a boolean context (e.g, when evaluating conditions).
@@ -269,6 +281,9 @@ Roughly, a structure providing a mechanism for chaining computations over differ
 
 ### Monitor
 An object or module providing mutually exclusive access among its clients to achieve thread safety.
+
+### Nullish
+An value representing the absence of a value (e.g., `null`) or the lack of information about a value (e.g., `undefined`)
 
 ### Object
 (1) An entity in a program intended to be stored in memory. (2) (OOP) An instance of class.
