@@ -1,4 +1,4 @@
-# THE PROGRAMMING LANGUGES AND COMPILERS GLOSSARY
+# The Programming Languages Glossary
 
 ### Abstract Class
 A class that cannot have any instances.
