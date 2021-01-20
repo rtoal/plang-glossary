@@ -165,6 +165,9 @@ An occurrence that can be detected and handled.
 ### Exception
 An entity that is thrown, or raised, to abort the current normal control flow and transfer control to the point at which the exception is caught. (In many languages exceptions are just called **errors**. Some languages even try to distinguish errors and exceptions.)
 
+### Expression
+A construct in a program that is **evaluated** to produce a **value**.
+
 ### Falsy
 Treated as false in a boolean context (e.g, when evaluating conditions).
 
@@ -208,7 +211,7 @@ The property of a language in which code is represented as a data structure and 
 A macro whose expansion will not capture identifiers.
 
 ### Identifier
-A name for an entity (variable, constant, function, type, etc.) in a program
+A name for an entity (variable, constant, function, type, etc.) in a program. (The set of identifiers allowed in a particular programming language often excludes the so-called **reserved words** or **keywords**.)
 
 ### Immutable
 The quality of an entity whose state may not change.
@@ -277,7 +280,7 @@ A function intimately associated with an object.
 A language construct wrapping a collection of (usually encapsulated) related entities, providing an interface to other modules of a system.
 
 ### Monad
-Roughly, a structure providing a mechanism for chaining computations over different structural types. In practical use, a monad provides a function for computing a wrapped value from a raw value (e.g. – æ M–) and a way to combine a wrapped value with a function on wrapped values to a new wrapped value (e.g., M– æ (– æ M—) æ M—).
+Roughly, a type whose values are wrappings over a base type, supporting operations to (1) wrap a value and (2) assoicatively chain functions that produce wrapped values from unwrapped values; such that first function is both a left and right identity for the second. (Example: Lists and Optionals are monads: the first operation puts an item into a singleton list or optional; the second is the `flatMap` you know and love from JavaScript.)
 
 ### Monitor
 An object or module providing mutually exclusive access among its clients to achieve thread safety.
@@ -286,10 +289,10 @@ An object or module providing mutually exclusive access among its clients to ach
 An value representing the absence of a value (e.g., `null`) or the lack of information about a value (e.g., `undefined`)
 
 ### Object
-(1) An entity in a program intended to be stored in memory. (2) (OOP) An instance of class.
+(1) In C and other low-level languages, an entity in a program intended to be stored in memory. (2) In OOP, an instance of class.
 
 ### Operator
-A function, generally, though not necessarily, named with non-alphanumeric symbols that computes well-known (often algebraic) and widely applicable operations.
+A function generally, though not necessarily, named with non-alphanumeric symbols that computes well-known (often algebraic) and widely applicable operations.
 
 ### Operator Overloading
 The allowance for a single named operator to have different implementations depending on their arguments. For example, the name * can overload integer multiplication, floating-point multiplication, string repetition, vector dot product, or vector scalar product.
@@ -336,11 +339,14 @@ An object that provides an interface to another object. The proxy takes requests
 ### Reactive Programming
 A programming style centered on streams of data that are managed asynchronously.
 
+### Receiver
+In a method invocation, the object on which a method is invoked.
+
 ### Record
 An object whose components are labeled values.
 
 ### Reference
-An object that refers to another object, called its referent. Often used to allow sharing of data. A reference may be dereferenced to obtain the referent, but does not act on behalf of the reference as does a proxy.
+An object that refers to another object, called its **referent**. Often used to allow sharing of data. A reference may be dereferenced to obtain the referent, but does not act on behalf of the reference as does a proxy.
 
 ### Regex
 See Regular Expression.
@@ -379,7 +385,7 @@ A variable or object used to permit only a specific number of threads to access 
 A component-by-component copy of the values of the original object, in which references are not followed but are themselves copied.
 
 ### Sigil
-A symbol axed to a variable name that shows the variable’s scope.
+A symbol affixed to a variable name that indicates something about the variable, such as its scope or type.
 
 ### Signal
 A value that changes over time but that is processed as a stream.
@@ -391,13 +397,13 @@ A specification of a function, method, or module that is completely free of impl
 The restriction of a type or class to have only a single supertype or superclass.
 
 ### Software Transactional Memory
-A mechanism for controlling updates in a concurrent environment in which all updates within a marked transaction either happen (get committed) or they are rolled back.
+A mechanism for controlling updates in a concurrent environment in which all updates within a marked transaction either happen (get committed) or are rolled back.
 
 ### Spread
 An operator that expands a single expression into multiple expressions, within the context of a collection literal, argument list, or similar construct.
 
 ### Stack Storage
-Location in memory used to store frames.
+The location in memory used to store frames.
 
 ### Starvation
 A scenario in which a process or thread cannot proceed because it is continually denied requests to resources it requires.
@@ -424,7 +430,7 @@ A class derived from another class, inheriting many of the original class’s pr
 A class that has been subclassed.
 
 ### Symbol
-A named primitive entity whose value is, essentially, itself. Also known as an atom.
+A named primitive entity whose value is, essentially, itself. Also known as an **atom**.
 
 ### Synchronous
 A form of communication in which the caller must wait for the callee to be ready to accept the call, or in some cases, must wait for the callee to finish the requested service.
