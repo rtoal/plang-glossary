@@ -37,7 +37,7 @@ An expression passed to a (parameterized) entity during a call, instantiation, o
 A mutable storage location. Used in place of the term **variable** when emphasizing mutability.
 
 ### Assignment
-The act of associating a value with a (mutable) variable.
+A run-time association of a _value_ with a (mutable) variable.
 
 ### Asynchronous
 A type of invocation in which the caller does not wait for the callee to complete.
@@ -46,16 +46,16 @@ A type of invocation in which the caller does not wait for the callee to complet
 A named primitive entity whose value is, essentially, itself. Also known as a **symbol**.
 
 ### Atomic Object
-An object that can be operated upon safely in a multithreaded environment without locks. Often the object holds a numeric value on which “compound” operations such as compare-and-set or get-and-add can be done atomically.
+An object that can be operated upon safely in a multithreaded environment without _explicit_ synchronization code. Often the object holds a numeric value on which “compound” operations such as compare-and-set or get-and-add can be done atomically.
 
 ### Automatic Reference Counting (ARC)
 A mechanism in which the compiler inserts code to release and retain blocks of memory so the programmer does not have to, specifically by counting the number of active references to the block and freeing the block when the reference count becomes zero.
 
 ### Billion-Dollar Mistake
-The implicit extension of types to include a null value. (For example, Java is said to suffer from the billion-dollar mistake since `null` is essentially a member of the `String` type; Swift does not since the types `String` and `String?` are distinct.)
+The implicit extension of types to include a null value. For example, Java is said to suffer from the billion-dollar mistake since `null` is essentially a member of the `String` type; Swift does not since the types `String` and `String?` are distinct.
 
 ### Binding
-An association of a name with an entity.
+An association of a _name_ with an entity (which can occur at compile-time or run-time).
 
 ### Borrow
 The use of a resource without taking full ownership.
@@ -82,7 +82,7 @@ The unique, nonnegative integer value assigned to a character in a character set
 An implicitly applied type conversion.
 
 ### Comprehension
-A composite value defined by means of an expression that generates the components.
+A composite value defined by means of an expression that generates the components of the composite.
 
 ### Concrete Class
 A class that is allowed to have instances.
@@ -121,7 +121,7 @@ An object providing additional behavior to another object.
 A block of code executed at some point in the future, generally in response to a triggering event.
 
 ### Deep Copy
-A copy which recurses through an an object graph, copying all referenced values.
+A copy which recurses through an object graph, copying all referenced values.
 
 ### Dependent Type
 A type that depends on a value or constraint, such as the type of trees with height 8, or the type of all sorted lists.
@@ -153,8 +153,11 @@ The bundling of data elements into a single component, often in a way that the c
 ### Encoding
 (1) The representation, in bytes, of an entity. (2) A specification of how certain entities should be encoded in bytes.
 
+### Entity
+A semantic component of a program, that could, in principle, be named and processed by the running program. Examples include: variables, constants, functions, arrays, types, blocks, generators, and iterators.
+
 ### Enum
-See **enumerated type**.
+A dope word for **enumerated type**.
 
 ### Enumeration
 A complete ordering of a given set of elements. The term may refer either to (1) a type whose constituent values are listed (an **enumerated type**) or (2) a sequence of values emitted by a generator.
@@ -166,16 +169,16 @@ A type whose complete set of memebers is listed (enumerated) in the program.
 An occurrence that can be detected and handled.
 
 ### Exception
-An entity that is thrown, or raised, to abort the current normal control flow and transfer control to the point at which the exception is caught.
+An entity that is thrown, or raised, to abort the current normal control flow and transfer control to the point at which the exception is caught, if any.
 
 ### Expression
 A construct in a program that is **evaluated** to produce a **value**.
 
 ### Falsy
-Treated as false in a boolean context (e.g, when evaluating conditions).
+Treated as false in a boolean context (e.g., when evaluating conditions).
 
 ### First-class
-Able to be assigned to variables, passed as parameters, and returned from routines.
+Able to be assigned to variables, passed as parameters, and returned from functions.
 
 ### Fixnum
 An integer type represented with a fixed, finite, number of bits.
@@ -190,7 +193,7 @@ A possibly parameterized, and possibly named, callable block of code.
 A programming paradigm in which computation proceeds entirely by evaluating side-effect-free expressions, generally involving function calls.
 
 ### Future
-See promise.
+See **promise**.
 
 ### Garbage Collection
 The reclamation of storage holding objects that are no longer needed.
@@ -214,7 +217,7 @@ The property of a language in which code is represented as a data structure and 
 A macro whose expansion will not capture identifiers.
 
 ### Identifier
-A name for an entity (variable, constant, function, type, etc.) in a program. (The set of identifiers allowed in a particular programming language often excludes the so-called **reserved words** or **keywords**.)
+A name for an entity in a program. (The set of identifiers allowed in a particular programming language often excludes the so-called **reserved words** or **keywords**.)
 
 ### Immutable
 The quality of an entity whose state may not change.
@@ -283,16 +286,16 @@ A function intimately associated with an object.
 A language construct wrapping a collection of (usually encapsulated) related entities, providing an interface to other modules of a system.
 
 ### Monad
-Roughly, a type whose values are wrappings over a base type, supporting operations to (1) wrap a value and (2) assoicatively chain functions that produce wrapped values from unwrapped values; such that first function is both a left and right identity for the second. (Example: Lists and Optionals are monads: the first operation puts an item into a singleton list or optional; the second is the `flatMap` you know and love from JavaScript.)
+Roughly, a type whose values are wrappings over a base type, supporting operations to (1) wrap a value and (2) associatively chain functions that produce wrapped values from unwrapped values; such that first function is both a left and right identity for the second. (Example: Lists and Optionals are monads: the first operation puts an item into a singleton list or optional; the second is the `flatMap` you know and love from JavaScript.)
 
 ### Monitor
 An object or module providing mutually exclusive access among its clients to achieve thread safety.
 
 ### Nullish
-An value representing the absence of a value (e.g., `null`) or the lack of information about a value (e.g., `undefined`)
+A value representing the absence of a value (e.g., `null`) or the lack of information about a value (e.g., `undefined`)
 
 ### Object
-(1) In C and other low-level languages, an entity in a program intended to be stored in memory. (2) In OOP, an instance of class.
+(1) In C and other low-level languages, an entity in a program intended to be stored in memory. (2) In object-oriented programming, an instance of class.
 
 ### Operator
 A function generally, though not necessarily, named with non-alphanumeric symbols that computes well-known (often algebraic) and widely applicable operations.
@@ -341,6 +344,9 @@ An object that provides an interface to another object. The proxy takes requests
 
 ### Reactive Programming
 A programming style centered on streams of data that are managed asynchronously.
+
+### Race Condition
+The situtation in which the result of a section of multithreaded code depends on which thread ends up modifying a shared resource “first.“
 
 ### Receiver
 In a method invocation, the object on which a method is invoked.
@@ -484,7 +490,7 @@ A variable that ranges over types.
 A type whose set of values is the union of zero or more other types.
 
 ### Value
-A unit of data.
+A unit of data or information.
 
 ### Variable
 (1) An identifier bound to a value. (2) A storage location containing a value that can change.
