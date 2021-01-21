@@ -28,7 +28,7 @@ An entity to which multiple names are bound.
 A form of metadata attached to an entity.
 
 ### AOT
-(1) Method of language translation in which the source language is translated fully _before_ interpretation, that is, <u>A</u>head-<u>O</u>f-<u>T</u>ime. (2) English abbreviation for the manga 進撃の巨人.
+(1) Method of language translation in which the source language is translated fully _before_ interpretation, that is, **A**head-**O**f-**T**ime. (2) English abbreviation for the manga 進撃の巨人.
 
 ### Argument
 An expression passed to a (parameterized) entity during a call, instantiation, or other invocation.
@@ -94,13 +94,13 @@ The modeling and coordination of independent and distinct computing activities w
 Roughly, a representation of “the rest of the program.”
 
 ### Contravariance
-A property of a type system that defines T<U> to be a subtype of T<V> whenever U is a **supertype** of V.
+A property of a type system that defines `T<U>` to be a subtype of `T<V>` whenever `U` is a **supertype** of `V`.
   
 ### Coroutine
-A line of execution that, under explicit programmer control, can yield to other coroutines and be resumed.
+A line of execution that, under explicit programmer control, can yield to other coroutines and be resumed later.
 
 ### Covariance
-A property of a type system that defines T<U> to be a subtype of T<V> whenever U is a **subtype** of V.
+A property of a type system that defines `T<U>` to be a subtype of `T<V>` whenever `U` is a **subtype** of `V`.
 
 ### Curried Function
 A function of one parameter that returns a function of one parameter, in contrast to a function that takes two parameters (or a pair of objects).
@@ -166,7 +166,7 @@ A type whose complete set of memebers is listed (enumerated) in the program.
 An occurrence that can be detected and handled.
 
 ### Exception
-An entity that is thrown, or raised, to abort the current normal control flow and transfer control to the point at which the exception is caught. (In many languages exceptions are just called **errors**. Some languages even try to distinguish errors and exceptions.)
+An entity that is thrown, or raised, to abort the current normal control flow and transfer control to the point at which the exception is caught.
 
 ### Expression
 A construct in a program that is **evaluated** to produce a **value**.
@@ -181,13 +181,13 @@ Able to be assigned to variables, passed as parameters, and returned from routin
 An integer type represented with a fixed, finite, number of bits.
 
 ### Frame
-A structure in the execution model of a program representing a particular activation of a routine. A frame records the parameters and local variables of the activation, as well as additional bookkeeping information. Also known as an activation record.
+A structure in the execution model of a program representing a particular activation of a **routine**. A frame records the parameters and local variables of the activation, as well as additional bookkeeping information. Also known as an **activation record**.
 
 ### Function
 A possibly parameterized, and possibly named, callable block of code.
 
 ### Functional Programming
-A programming paradigm in which computation proceeds entirely by evaluating side-eect-free expressions, generally involving function calls.
+A programming paradigm in which computation proceeds entirely by evaluating side-effect-free expressions, generally involving function calls.
 
 ### Future
 See promise.
@@ -202,7 +202,7 @@ Able to be specified just once and “work in about the same way” in many diff
 A boolean expression used to allow (when true) or disallow (when false) access to an entity.
 
 ### Heap Storage
-The portion of memory in which new objects are allocated (and deallocated) at run time.
+The portion of memory in which new objects are allocated (and deallocated) at run time. Sometimes simply called “the heap“.
 
 ### Higher-Order Function
 A function that takes functions as arguments or returns functions.
@@ -359,6 +359,9 @@ A pattern that describes sets of strings according to a large number of widely-a
 
 ### Reserved Word
 A word in the syntax of a programming language that cannot be used as an identifier.
+
+### Routine
+A callable block of code, either a **subroutine** or **coroutine**.
 
 ### Runtime
 The period of time in which a program is being executed.
