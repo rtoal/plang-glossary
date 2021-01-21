@@ -43,7 +43,7 @@ A run-time association of a _value_ with a (mutable) variable.
 A type of invocation in which the caller does not wait for the callee to complete.
 
 ### Atom
-A named primitive entity whose value is, essentially, itself. Also known as a #symbol.
+A named primitive entity whose value is, essentially, itself. Also known as a [symbol](#symbol).
 
 ### Atomic Object
 An object that can be operated upon safely in a multithreaded environment without _explicit_ synchronization code. Often the object holds a numeric value on which “compound” operations such as compare-and-set or get-and-add can be done atomically.
@@ -52,7 +52,7 @@ An object that can be operated upon safely in a multithreaded environment withou
 A mechanism in which the compiler inserts code to release and retain blocks of memory so the programmer does not have to, specifically by counting the number of active references to the block and freeing the block when the reference count becomes zero.
 
 ### Billion-Dollar Mistake
-The implicit extension of types to include a null value. For example, Java is said to suffer from the billion-dollar mistake since `null` is essentially a member of the `String` type; Swift does not since the types `String` and `String?` are distinct.
+The implicit extension of types to include a null value.
 
 ### Binding
 An association of a _name_ with an entity (which can occur at compile-time or run-time).
@@ -136,7 +136,7 @@ Code (generally a function) executed when an object is destroyed.
 A set of key-value pairs, with unique keys. Also known as a **map**.
 
 ### Discriminated Union
-See **tagged union**.
+See [tagged union](#tagged-union).
 
 ### Dynamic Language
 A language in which tasks such as modifying code and adding types can be done at run time.
@@ -469,7 +469,7 @@ A union type whose members are each tagged with a label indicating the underlyin
 A sequential flow of control, generally preemptible and generally able to share memory with other threads.
 
 ### Trait
-A set of methods, generally expected to be mixed in to a class to enhance its behavior or to increase its capabilities.
+A set of methods, generally expected to be mixed into a class to enhance its behavior or to increase its capabilities.
 
 ### Transient
 The property of any element in a system that is not persisted or serialized.
