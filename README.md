@@ -10,7 +10,7 @@ A method of an abstract class or interface that has no implementation.
 A representation of a program’s structure without low-level details such as punctuation and preposition-like keywords that serve only to impose a structure on linear program text.
 
 ### Activation Record
-See #frame.
+See [Frame](#frame).
 
 ### Actor
 A concurrent process that communicates by sending and receiving messages.
