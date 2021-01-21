@@ -1,13 +1,13 @@
 # The Programming Languages and Compilers Glossary
 
 ### Abstract Class
-A class that cannot have any instances (as it is intended to be subclassed).
+A class that is not allowed to have any instances (it is intended to be subclassed).
 
 ### Abstract Method
 A method of an abstract class or interface that has no implementation.
 
 ### Abstract Syntax
-A representation of a program’s structure without details such as certain punctuation and preposition-like keywords that serve only to impose a structure on linear program text.
+A representation of a program’s structure without low-level details such as punctuation and preposition-like keywords that serve only to impose a structure on linear program text.
 
 ### Activation Record
 See **frame**.
@@ -19,13 +19,16 @@ A concurrent process that communicates by sending and receiving messages.
 An entity that acts on behalf of another entity.
 
 ### Alias
-One of the names of a multiply-named entity. (An entity to which multiple names are bound is said to be aliased.)
+One of the names of a multiply-named entity.
+
+## Aliased
+An entity to which multiple names are bound.
 
 ### Annotation
 A form of metadata attached to an entity.
 
 ### AOT
-(1) Method of language translation in which the source language is translated fully _before_ interpretation, that is, Ahead-Of-Time. (2) English abbreviation for the Manga 進撃の巨人.
+(1) Method of language translation in which the source language is translated fully _before_ interpretation, that is, <u>A</u>head-<u>O</u>f-<u>T</u>ime. (2) English abbreviation for the manga 進撃の巨人.
 
 ### Argument
 An expression passed to a (parameterized) entity during a call, instantiation, or other invocation.
@@ -46,10 +49,10 @@ A named primitive entity whose value is, essentially, itself. Also known as a **
 An object that can be operated upon safely in a multithreaded environment without locks. Often the object holds a numeric value on which “compound” operations such as compare-and-set or get-and-add can be done atomically.
 
 ### Automatic Reference Counting (ARC)
-A mechanism in which the compiler inserts code to release and retain blocks of memory so the programmer does not have to.
+A mechanism in which the compiler inserts code to release and retain blocks of memory so the programmer does not have to, specifically by counting the number of active references to the block and freeing the block when the reference count becomes zero.
 
 ### Billion-Dollar Mistake
-The implicit extension of types to include a null value. (For example, Java is said to suffer from the billion-dollar mistake since `null` is essentially a member of the `String` type; whereas Swift does not since the types `String` and `String?` are distinct, with the latter _explicitly_ allowing the null value.)
+The implicit extension of types to include a null value. (For example, Java is said to suffer from the billion-dollar mistake since `null` is essentially a member of the `String` type; Swift does not since the types `String` and `String?` are distinct.)
 
 ### Binding
 An association of a name with an entity.
@@ -70,13 +73,13 @@ An entity from which objects are created. Objects instantiated from a class have
 A property that belongs to a class, rather than to the instances of the class. Sometimes known as a **static field** or **static property**.
 
 ### Closure
-A block or function with free variables that takes values from the environment in which it is defined.
+A block or function with free variables that get their values from the environment in which the block or function is defined.
 
 ### Code Point
 The unique, nonnegative integer value assigned to a character in a character set.
 
 ### Coercion
-An implicitly applied type cast.
+An implicitly applied type conversion.
 
 ### Comprehension
 A composite value defined by means of an expression that generates the components.
