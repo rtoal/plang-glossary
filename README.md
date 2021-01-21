@@ -184,7 +184,7 @@ Able to be assigned to variables, passed as parameters, and returned from functi
 An integer type represented with a fixed, finite, number of bits.
 
 ### Frame
-A structure in the execution model of a program representing a particular activation of a **routine**. A frame records the parameters and local variables of the activation, as well as additional bookkeeping information. Also known as an **activation record**.
+A structure in the execution model of a program representing a particular activation of a [routine](#routine). A frame records the parameters and local variables of the activation, as well as additional bookkeeping information. Also known as an **activation record**.
 
 ### Function
 A possibly parameterized, and possibly named, callable block of code.
@@ -241,10 +241,10 @@ The process of evaluating a string or object literal to yield a result in which 
 An object that provides the capability to access the elements of a container in some order.
 
 ### JIT
-Method of language translation in which the source language is translated _during_ interpretation, that is, Just-In-Time.
+Method of language translation in which the source language is translated _during_ interpretation, that is, (J)ust-(I)n-(T)ime.
 
 ### Keyword
-A word with a special meaning in a programming language, such as "function", "while", or "if", that generally cannot be used as an identifier.
+A word with a special meaning in a programming language, such as "function", "while", or "if". (Note: a keyword may or may not be a [reserved word](#reserved-word).)
 
 ### Keyword Argument
 An argument that is matched to a corresponding parameter using the parameter’s name, rather than by its position in a call.
@@ -358,16 +358,16 @@ An object whose components are labeled values.
 An object that refers to another object, called its **referent**. Often used to allow sharing of data. A reference may be dereferenced to obtain the referent, but does not act on behalf of the reference as does a proxy.
 
 ### Regex
-See **Regular Expression**.
+Another term for [Regular Expression](#regular-expression).
 
 ### Regular Expression
 A pattern that describes sets of strings according to a large number of widely-accepted mechanisms, and sometimes with programming-language specific mechanisms.
 
 ### Reserved Word
-A word in the syntax of a programming language that cannot be used as an identifier.
+A word in the syntax of a programming language that cannot be used as an [identifier](#identifier).
 
 ### Routine
-A callable block of code, either a **subroutine** or **coroutine**.
+A callable block of code, either a [subroutine](#subroutine) or [coroutine](#coroutine).
 
 ### Runtime
 The period of time in which a program is being executed.
@@ -388,7 +388,7 @@ An entity that is not allowed to be represented by a variable in an expression.
 The phase of language translation or interpretation in which (1) legality rules that cannot be captured in a context-free syntax are checked, and (2) all identifier uses are resolved to determine the definitions that they reference.
 
 ### Semantics
-Meaning
+Refers to the meaning of a program, as opposed to structure.
 
 ### Semaphore
 A variable or object used to permit only a specific number of threads to access a shared resource at a time.
@@ -438,6 +438,9 @@ An evaluation strategy in which all operands are evaluated before being given to
 ### Subclass
 A class derived from another class, inheriting many of the original class’s properties and optionally adding its own properties and behaviors.
 
+### Subrooutine
+A callable block of code designed to run while the caller waits for it to finish.
+
 ### Superclass
 A class that has been subclassed.
 
@@ -452,6 +455,9 @@ Syntactic forms that tend to make programs verbose, or difficult to follow, even
 
 ### Syntactic Sugar
 A syntactic form that improves upon an equivalent primitive form by being more concise, expressive, powerful, or elegant.
+
+### Syntax
+Refers to the structure of a program, as opposed its meaning.
 
 ### Systems Language
 A programming language used for writing system software.
