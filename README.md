@@ -10,7 +10,7 @@ A method of an abstract class or interface that has no implementation.
 A representation of a program’s structure without low-level details such as punctuation and preposition-like keywords that serve only to impose a structure on linear program text.
 
 ### Activation Record
-See **frame**.
+See #frame.
 
 ### Actor
 A concurrent process that communicates by sending and receiving messages.
@@ -43,7 +43,7 @@ A run-time association of a _value_ with a (mutable) variable.
 A type of invocation in which the caller does not wait for the callee to complete.
 
 ### Atom
-A named primitive entity whose value is, essentially, itself. Also known as a **symbol**.
+A named primitive entity whose value is, essentially, itself. Also known as a #symbol.
 
 ### Atomic Object
 An object that can be operated upon safely in a multithreaded environment without _explicit_ synchronization code. Often the object holds a numeric value on which “compound” operations such as compare-and-set or get-and-add can be done atomically.
@@ -301,7 +301,7 @@ A value representing the absence of a value (e.g., `null`) or the lack of inform
 A function generally, though not necessarily, named with non-alphanumeric symbols that computes well-known (often algebraic) and widely applicable operations.
 
 ### Operator Overloading
-The allowance for a single named operator to have different implementations depending on their arguments. For example, the name * can overload integer multiplication, floating-point multiplication, string repetition, vector dot product, or vector scalar product.
+The allowance for a single named operator to have different implementations depending on their arguments. For example, the name `*` can overload integer multiplication, floating-point multiplication, string repetition, vector dot product, or vector scalar product.
 
 ### Option Type
 A type whose values are wrappers that either contain or do not contain a wrapped value.
@@ -358,7 +358,7 @@ An object whose components are labeled values.
 An object that refers to another object, called its **referent**. Often used to allow sharing of data. A reference may be dereferenced to obtain the referent, but does not act on behalf of the reference as does a proxy.
 
 ### Regex
-See Regular Expression.
+See **Regular Expression**.
 
 ### Regular Expression
 A pattern that describes sets of strings according to a large number of widely-accepted mechanisms, and sometimes with programming-language specific mechanisms.
