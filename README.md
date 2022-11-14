@@ -21,7 +21,7 @@ An entity that acts on behalf of another entity.
 ### Alias
 One of the names of a multiply-named entity.
 
-## Aliased
+### Aliased Entity
 An entity to which multiple names are bound.
 
 ### Annotation
@@ -33,11 +33,17 @@ A form of metadata attached to an entity.
 ### Argument
 An expression passed to a (parameterized) entity during a call, instantiation, or other invocation.
 
+### Argument Label
+A label placed on an argument in a call for readability.
+
 ### Assignable
 A mutable storage location. Used in place of the term **variable** when emphasizing mutability.
 
 ### Assignment
 A run-time association of a _value_ with a (mutable) variable.
+
+### Associativity
+The property of an operator that dictates how it combines in unparenthesized contexts with other operators of the same precedence level. Kinds of assocativity include left-associative, right-associative, and non-associative.
 
 ### Asynchronous
 A type of invocation in which the caller does not wait for the callee to complete.
@@ -61,7 +67,7 @@ An association of a _name_ with an entity (which can occur at compile-time or ru
 The use of a resource without taking full ownership.
 
 ### Callback
-A function _f_ both passed to a function _g_ and invoked within the body of _g_.
+A function _f_ that is passed to a function _g_ and invoked within the body of _g_.
 
 ### Character
 (1) A named, abstract symbol. (2) The type of characters.
@@ -85,10 +91,13 @@ An implicitly applied type conversion.
 A composite value defined by means of an expression that generates the components of the composite.
 
 ### Concrete Class
-A class that is allowed to have instances.
+A class that _is_ allowed to have instances.
 
 ### Concurrency
 The modeling and coordination of independent and distinct computing activities whose execution spans may overlap in time.
+
+### Consumer
+A function taking an input (or inputs) but producing no outputs, other than perhaps side-effects. In concurrent enviroments, a process that accepts (streams of) data from another source.
 
 ### Continuation
 Roughly, a representation of “the rest of the program.”
@@ -140,6 +149,9 @@ See [tagged union](#tagged-union).
 
 ### Dynamic Language
 A language in which tasks such as modifying code and adding types can be done at run time.
+
+### Dynamic Types
+The types of entities at run time.
 
 ### Dynamic Typing
 The state of having the types of some expressions not known until run time.
@@ -198,6 +210,9 @@ See **promise**.
 ### Garbage Collection
 The reclamation of storage holding objects that are no longer needed.
 
+### Generator
+An object that produces a sequence of values on demand.
+
 ### Generic
 Able to be specified just once and “work in about the same way” in many different contexts.
 
@@ -211,7 +226,7 @@ The portion of memory in which new objects are allocated (and deallocated) at ru
 A function that takes functions as arguments or returns functions.
 
 ### Homoiconicity
-The property of a language in which code is represented as a data structure and both have the same syntactic forms.
+The property of a language in which code is represented as a data structure and both code and data have the same syntactic forms.
 
 ### Hygienic Macro
 A macro whose expansion will not capture identifiers.
@@ -220,13 +235,13 @@ A macro whose expansion will not capture identifiers.
 A name for an entity in a program. (The set of identifiers allowed in a particular programming language often excludes the so-called **reserved words** or **keywords**.)
 
 ### Immutable
-The quality of an entity whose state may not change.
+The quality of an entity whose state may not change. The term can also be applied to variables whose values may not be changed.
 
 ### Inheritance
 The property of a class or object acquiring the same structure or behavior of another entity, which can then be optionally specialized.
 
 ### Instance
-An object (when referred to in reference to its class or interface).
+An object begin referred to in reference the class that created it.
 
 ### Interface
 A programming structure that enforces certain behaviors on an object.
@@ -286,10 +301,13 @@ A function intimately associated with an object.
 A language construct wrapping a collection of (usually encapsulated) related entities, providing an interface to other modules of a system.
 
 ### Monad
-Roughly, a type whose values are wrappings over a base type, supporting operations to (1) wrap a value and (2) associatively chain functions that produce wrapped values from unwrapped values; such that first function is both a left and right identity for the second. (Example: Lists and Optionals are monads: the first operation puts an item into a singleton list or optional; the second is the `flatMap` you know and love from JavaScript.)
+Roughly, a type whose values are wrappings over a base type, supporting operations to (1) wrap a value and (2) associatively chain functions that produce wrapped values from unwrapped values; such that first function is both a left and right identity for the second. (Example: Lists and Optionals are monads: the first operation puts an item into a singleton list or optional; the second just `flatMap`.)
 
 ### Monitor
 An object or module providing mutually exclusive access among its clients to achieve thread safety.
+
+### Mutable
+Able to be modified. Mutable variables can be reassigned; mutable objects can have new values bound to their properties.
 
 ### Nullish
 A value representing the absence of a value (e.g., `null`) or the lack of information about a value (e.g., `undefined`)
@@ -333,6 +351,12 @@ An object that references a location in memory.
 ### Polymorphism
 The allowance for a single name to be bound to multiple entities at the same time, generally with the understanding that any invocation of the name will refer to the desired entity based on context.
 
+### Precedence
+The property of an operator indicating when it should be applied in relation to other operators in a non-parenthesized context.
+
+### Predicate
+A function with one or more inputs that returns a boolean value.
+
 ### Promise
 Roughly, a placeholder for an (initially) unfinished computation. A promise is immediately returned when an asynchronous computation is launched to be queried later or used in a callback. Also known as a future, though in some contexts, futures and promises are distinguished.
 
@@ -352,7 +376,10 @@ The situtation in which the result of a section of multithreaded code depends on
 In a method invocation, the object on which a method is invoked.
 
 ### Record
-An object whose components are labeled values.
+An object whose components are labeled values. Records are often immutable.
+
+### Recursion
+The process of repeating in a self-similar fashion. Objects that contain self-similar smaller copies (or near-copies) of themselves, or algorithms implemented with internal copies of themselves, are **recursive**.
 
 ### Reference
 An object that refers to another object, called its **referent**. Often used to allow sharing of data. A reference may be dereferenced to obtain the referent, but does not act on behalf of the reference as does a proxy.
@@ -415,7 +442,7 @@ A mechanism for controlling updates in a concurrent environment in which all upd
 An operator that expands a single expression into multiple expressions, within the context of a collection literal, argument list, or similar construct.
 
 ### Stack Storage
-The location in memory used to store frames.
+The location in memory used to store frames. Sometimes referred to simply as “the stack.”
 
 ### Starvation
 A scenario in which a process or thread cannot proceed because it is continually denied requests to resources it requires.
@@ -425,6 +452,9 @@ A language in which the vast majority of metadata (types of variables, which fun
 
 ### Static Storage
 The region of memory used to store data whose lifetime coincides with the entire program.
+
+### Static Types
+The types assigned to expressions before the progran is run which are available to and used by a compiler for compile-time type checking and analysis.
 
 ### Static Typing
 The inference of and checking of types prior to execution.
@@ -443,6 +473,9 @@ A callable block of code designed to run while the caller waits for it to finish
 
 ### Superclass
 A class that has been subclassed.
+
+### Supplier
+A function with no parameters that produces a value.
 
 ### Symbol
 A named primitive entity whose value is, essentially, itself. Also known as an **atom**.
@@ -482,6 +515,9 @@ Treated as true in a boolean context (e.g., when evaluating conditions).
 
 ### Type
 A set of values with common behavior enforced by the programming language.
+
+### Typeclass
+A collection of types that behave similariy. Examples include Equatable, Comparable, and Numeric.
 
 ### Type Compatibility
 The property of a relationship between an expression e and type t in which e can be used in any context expecting a value of type t.
