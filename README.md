@@ -43,7 +43,7 @@ A mutable storage location. Used in place of the term **variable** when emphasiz
 A run-time association of a _value_ with a (mutable) variable.
 
 ### Associativity
-The property of an operator that dictates how it combines in unparenthesized contexts with other operators of the same precedence level. Kinds of assocativity include left-associative, right-associative, and non-associative.
+The property of an operator that dictates how it combines in unparenthesized contexts with other operators of the same precedence level. Kinds of associativity include left-associative, right-associative, and non-associative.
 
 ### Asynchronous
 A type of invocation in which the caller does not wait for the callee to complete.
@@ -79,7 +79,7 @@ An entity from which objects are created. Objects instantiated from a class have
 A property that belongs to a class, rather than to the instances of the class. Sometimes known as a **static field** or **static property**.
 
 ### Closure
-A block or function with free variables that get their values from the environment in which the block or function is defined.
+Generally, a block or function with free variables that get their values from the environment in which the block or function is defined. (In Swift, the term is used for any block or function, regardless of whether it has free variables or not.)
 
 ### Code Point
 The unique, nonnegative integer value assigned to a character in a character set.
@@ -136,7 +136,7 @@ A copy which recurses through an object graph, copying all referenced values.
 A type that depends on a value or constraint, such as the type of trees with height 8, or the type of all sorted lists.
 
 ### Dereference
-The evaluation of the the object referenced by a (pointer) variable.
+The evaluation of the object referenced by a (pointer) variable.
 
 ### Destructor
 Code (generally a function) executed when an object is destroyed.
@@ -148,13 +148,13 @@ A set of key-value pairs, with unique keys. Also known as a **map**.
 See [tagged union](#tagged-union).
 
 ### Dynamic Language
-A language in which tasks such as modifying code and adding types can be done at run time.
+A language in which tasks such as modifying code and adding types can be done at runtime.
 
 ### Dynamic Types
-The types of entities at run time.
+The types of entities at runtime.
 
 ### Dynamic Typing
-The state of having the types of some expressions not known until run time.
+The state of having the types of some expressions not known until runtime.
 
 ### Eager Evaluation
 The evaluation of all of a function’s arguments (or an operator’s operand) _before_ application of the function (or operator). Also known as **strict evaluation**.
@@ -220,7 +220,7 @@ Able to be specified just once and “work in about the same way” in many diff
 A boolean expression used to allow (when true) or disallow (when false) access to an entity.
 
 ### Heap Storage
-The portion of memory in which new objects are allocated (and deallocated) at run time. Sometimes simply called “the heap“.
+The portion of memory in which new objects are allocated (and deallocated) at runtime. Sometimes simply called “the heap“.
 
 ### Higher-Order Function
 A function that takes functions as arguments or returns functions.
@@ -241,7 +241,7 @@ The quality of an entity whose state may not change. The term can also be applie
 The property of a class or object acquiring the same structure or behavior of another entity, which can then be optionally specialized.
 
 ### Instance
-An object begin referred to in reference the class that created it.
+An object being referred to in reference to the class that created it.
 
 ### Interface
 A programming structure that enforces certain behaviors on an object.
@@ -370,7 +370,7 @@ An object that provides an interface to another object. The proxy takes requests
 A programming style centered on streams of data that are managed asynchronously.
 
 ### Race Condition
-The situtation in which the result of a section of multithreaded code depends on which thread ends up modifying a shared resource “first.“
+The situation in which the result of a section of multithreaded code depends on which thread ends up modifying a shared resource “first.“
 
 ### Receiver
 In a method invocation, the object on which a method is invoked.
@@ -454,7 +454,7 @@ A language in which the vast majority of metadata (types of variables, which fun
 The region of memory used to store data whose lifetime coincides with the entire program.
 
 ### Static Types
-The types assigned to expressions before the progran is run which are available to and used by a compiler for compile-time type checking and analysis.
+The types assigned to expressions before the program is run which are available to and used by a compiler for compile-time type checking and analysis.
 
 ### Static Typing
 The inference of and checking of types prior to execution.
@@ -490,7 +490,7 @@ Syntactic forms that tend to make programs verbose, or difficult to follow, even
 A syntactic form that improves upon an equivalent primitive form by being more concise, expressive, powerful, or elegant.
 
 ### Syntax
-Refers to the structure of a program, as opposed its meaning.
+Refers to the structure of a program, as opposed to its meaning.
 
 ### Systems Language
 A programming language used for writing system software.
