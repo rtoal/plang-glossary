@@ -69,8 +69,11 @@ The use of a resource without taking full ownership.
 ### Callback
 A function _f_ that is passed to a function _g_ and invoked within the body of _g_.
 
+### Channel
+A conduit for messages in a distributed architecture.
+
 ### Character
-(1) A named, abstract symbol. (2) The type of characters.
+A unit of textual information, generally a named, abstract symbol.
 
 ### Class
 An entity from which objects are created. Objects instantiated from a class have the structure and behavior defined by the class, though in some languages instances are allowed to be customized.
@@ -309,6 +312,12 @@ An object or module providing mutually exclusive access among its clients to ach
 ### Mutable
 Able to be modified. Mutable variables can be reassigned; mutable objects can have new values bound to their properties.
 
+### Null
+A value representing the absence of information.
+
+### Null Reference
+A reference without a referent.
+
 ### Nullish
 A value representing the absence of a value (e.g., `null`) or the lack of information about a value (e.g., `undefined`)
 
@@ -323,6 +332,9 @@ The allowance for a single named operator to have different implementations depe
 
 ### Option Type
 A type whose values are wrappers that either contain or do not contain a wrapped value.
+
+### Parallelism
+The state of a running program in which multiple physical execution units (e.g. cores) are actively computing at the same time.
 
 ### Parameter
 A variable to which arguments are passed.
@@ -542,3 +554,6 @@ A variable that must be made available to multiple threads and thus cannot be im
 
 ### Wildcard
 A character in a pattern meant to be replaced.
+
+### Zero Cost Abstraction
+A feature that looks complex but has zero overhead or performance penalty.
